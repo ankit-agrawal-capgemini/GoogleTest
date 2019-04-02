@@ -55,6 +55,16 @@ TEST(Person, testAgeMethods3)
     EXPECT_EQ(person->getAge(), age);
 }
 
+TEST(Person, testAgeMethods4)
+{
+    int age = 27;
+
+    Person *person = new Person();
+
+    person->setAge(age);
+    EXPECT_EQ(person->getAge(), age);
+}
+
 int main(int argc, char **argv)
 {
     testing::InitGoogleTest(&argc, argv);
