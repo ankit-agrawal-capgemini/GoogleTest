@@ -35,10 +35,19 @@ TEST(Person, testAgeMethods)
     EXPECT_EQ(person->getAge(), age);
 }
 
-
 TEST(Person, testAgeMethods2)
 {
-    int age = 24;
+    int age = 25;
+
+    Person *person = new Person();
+
+    person->setAge(age);
+    EXPECT_EQ(person->getAge(), age);
+}
+
+TEST(Person, testAgeMethods3)
+{
+    int age = 26;
 
     Person *person = new Person();
 
