@@ -57,7 +57,7 @@ TEST(Person, testAgeMethods3)
 
 TEST(Person, testAgeMethods4)
 {
-    int age = 27;
+    int age = 30;
 
     Person *person = new Person();
 
